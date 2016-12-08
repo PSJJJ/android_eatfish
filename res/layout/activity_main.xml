@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.sxh.eatfish.MainActivity">
+
+    <com.sxh.eatfish.GameView
+        android:id="@+id/fishView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:text="life:7"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/score"
+        android:text="score:0"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/stop"
+        android:layout_gravity="top|right"
+        android:background="#30000000"
+        android:textSize="40sp"
+        android:text="停止"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/gameover"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="游戏结束"
+            android:textSize="60sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="#30000000"
+            android:text="重新开始"
+            android:textColor="#FFF"
+            android:id="@+id/restart"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/start"
+        android:text="开始"
+        android:background="#30000000"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
+
